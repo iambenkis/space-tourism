@@ -146,7 +146,6 @@ thins.forEach((thin, index) => {
         });
     })
 
-engs.textContent ='Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem consectetur deleniti dignissimos alias? Accusantium iusto reiciendis aut quasi alias omnis harum. Ea doloremque, odit facilis unde pariatur debitis perspiciatis magnam?'
  
 console.log(data)
       
