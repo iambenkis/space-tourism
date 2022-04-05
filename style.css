@@ -7,8 +7,7 @@
 }
 
 
-body{
-    background-color: red;
+body{ 
 }
 
 
@@ -26,24 +25,22 @@ header .logo{
     margin-right: auto; 
 }
 
-header .nav-icons i{
+header .nav-icons .fa-bars{
     color: rgb(166, 207, 255);
     cursor: pointer;
 }
 
 header .navbar{
     display: none;
-    width: 100%;
-    height: 100vh;
+    width: 100%; 
     position: absolute;
     left: 9.5rem;
     top: 2.7rem;
-    background-color: #fff;
+    background-color: rgba(75, 118, 196, 0.801);
     border-radius: 5px;
-    margin-top: -3rem;
-
-    font-family: Poppins-Medium; 
+    margin-top: -3rem; 
     z-index: -1;
+    color: #fff;
 }
 
 header .active{
@@ -57,6 +54,7 @@ header .fa-bars{
 header .fa-xmark{
     display: none;
     transition:  .5s ease;
+    color: #fff;
 }
 
 .active-window{
@@ -77,7 +75,8 @@ header .navbar li{
 
 header .navbar li a{
     text-decoration: none;
-    color: #777;
+    color: #fff;
+    font-weight: 600;
     
 }
 
@@ -200,11 +199,11 @@ main .explore  h3{
     display: flex;
 }
 
-/* .crew .level { 
-    top:50%;
-    left: 50%; 
-    transform: translate(-50%,-50%); 
-}   */
+  .crew .level { 
+   display: flex;
+   justify-content: center;
+   margin-top: 1rem;
+}   
 
 #crew .level i{ 
     cursor: pointer;
@@ -230,15 +229,13 @@ main .explore  h3{
 }
 
 .description{  
-    margin-top: 3rem;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
  
 
-.engineer{
-    display: none;
-    
-}
+ 
 
 .active-crew{ 
     display: block;
@@ -248,11 +245,8 @@ main .explore  h3{
 .level { 
      display: flex; 
     cursor: pointer;
-    justify-content: start;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    justify-content: center; 
+    
 
 }
 
@@ -276,6 +270,81 @@ main .explore  h3{
 .show-detail{
     display: block;
 }
+
+.display-t{
+    display: flex;
+}
+
+.techno {
+    background-image: url(./assets/technology/background-technology-mobile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+    flex-direction: column;
+}
+
+.tech-img{ 
+    margin: 1rem 0;
+    display: none;
+}
+
+.tech-img img{
+    width: 100%;
+}
+
+.nav-tech{
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-tech .nbr{
+    height: 2rem;
+    width: 2rem; 
+    border: 2px solid #fff;
+    color: #fff; 
+    border-radius: 50%; 
+    position: relative;
+    margin: 2.5rem 0;
+    margin-right: .5rem;
+
+}
+
+.nav-tech .nbr:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.nav-tech .nbr p {
+    position: absolute;
+    bottom: -40%;
+    left: -10%;
+}
+
+.tech-desc{
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.tech-desc h6{
+    font-weight: 300;
+    font-size: 10px;
+}
+
+.tech-desc h3{
+    font-size: 1.5rem; 
+    font-weight: 600;
+}
+
+.tech{
+    display: block;
+}
+
+.display-tech{
+    display: block;
+}
+
 /* @media (min-width:640px){
     body{
         display: none;
