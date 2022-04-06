@@ -3,9 +3,10 @@ let time  = document.getElementsByClassName('fa-xmark');
 let navbar = document.getElementsByClassName('navbar'); 
 
 let thins = document.querySelectorAll('.fa-circle');
-let engs = document.querySelectorAll('.engineer') 
+let engs = document.querySelectorAll('.crew-image') 
 let mains = document.querySelectorAll('.display')
 let navs = document.querySelectorAll('.nav-fa')
+let crew = document.querySelectorAll('.description')
 
 let dests = document.querySelectorAll('.des-nav')
 let dest_cont = document.querySelectorAll('.dest')
@@ -16,7 +17,10 @@ let nbrs = document.querySelectorAll('.nbr')
 let imgs = document.querySelectorAll('.tech-img')
 let techs = document.querySelectorAll('.tech-desc')
 
- 
+let explore =document.querySelectorAll('.explore')
+
+
+
 menu[0].addEventListener('click',()=>{
     time[0].classList.add('active1');
     navbar[0].classList.add('active');
@@ -40,6 +44,11 @@ thins.forEach((thin, index) => {
                 tab.classList.remove('active-crew');
             });
 
+            crew.forEach((c) => {
+              c.classList.remove('display-desc') 
+            })
+
+            crew[index].classList.add('display-desc')
             engs[index].classList.add('active-crew'); 
         });
     })
@@ -55,6 +64,17 @@ navs.forEach((nav, index) => {
 
       })
     })
+
+explore.forEach((e) => {
+  e.addEventListener('click',() => {
+    mains.forEach((main) => {
+      main.classList.remove('main-active')
+    })
+    mains[2].classList.add('main-active') 
+})
+
+})
+ 
 
 dests.forEach((dest,index) => {
     dest.addEventListener('click', () => {

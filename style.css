@@ -6,9 +6,7 @@
     list-style: none;
 }
 
-
-body{ 
-}
+@media (max-width:620px){
 
 
 header{
@@ -32,7 +30,7 @@ header .nav-icons .fa-bars{
 
 header .navbar{
     display: none;
-    width: 100%; 
+    width: 50%; 
     position: absolute;
     left: 9.5rem;
     top: 2.7rem;
@@ -115,6 +113,7 @@ main .explore {
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
+    cursor: pointer;
     
 }
 
@@ -124,13 +123,12 @@ main .explore  h3{
 }
 
 
-.home{
-    max-width: 647px;  
-    height: auto;   
+.home{  
     background-image: url(./assets/home/background-home-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    height: 85vh;
     overflow: scroll; 
     display: none;
     flex-direction: column;
@@ -176,33 +174,27 @@ main .explore  h3{
 
 
 
-.crew{ 
-    max-width: 647px;  
+.crew{  
     background-image: url(./assets/crew/background-crew-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    overflow: scroll;
-    height: 100vh;  
+    overflow: scroll; 
     position: relative;  
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;   
 }
 
 .display{ 
     display: none;
 }
 
-.main-active{ 
-    display: flex;
-}
+
 
   .crew .level { 
    display: flex;
    justify-content: center;
-   margin-top: 1rem;
+   margin: 2rem 0;
 }   
 
 #crew .level i{ 
@@ -225,12 +217,21 @@ main .explore  h3{
     width: 10rem; 
     height: 10rem;   
      border-bottom: 2px solid #333;
-     margin-top: 1rem;
+     margin-top: 5rem;
+}
+
+.crew-image{ 
+    display:none;
 }
 
 .description{  
     margin-top: 1rem;
     padding-bottom: 1rem;
+    display: none;
+}
+
+.display-desc{
+    display: block;
 }
 
  
@@ -283,6 +284,8 @@ main .explore  h3{
     display: none;
     flex-direction: column;
 }
+
+ 
 
 .tech-img{ 
     margin: 1rem 0;
@@ -345,6 +348,10 @@ main .explore  h3{
     display: block;
 }
 
+.main-active{ 
+    display: flex;
+}
+}
 /* @media (min-width:640px){
     body{
         display: none;
