@@ -457,7 +457,7 @@ header .navbar ul a{
 .crew-image {
     position: absolute;
     left: 60%;
-    bottom: 0%;
+    bottom: 15%;
 }
 
 .crew-image img{ 
@@ -481,7 +481,13 @@ header .navbar ul a{
 }
 .destination .nav-dest{
     position: absolute;
-    left: 70%;
+    left: 80%;
+    top: 25%;
+    display: flex;
+}
+
+.destination .nav-dest h4{
+    margin-right: .5rem;
 }
 
 .destination h2{
@@ -504,7 +510,8 @@ header .navbar ul a{
     left: 3.8%;
     top: 65%;
     width: 40%; 
-   
+    display: flex;
+    justify-content: space-between;
 }
  
 
@@ -512,7 +519,14 @@ header .navbar ul a{
     position: absolute;
     left: 5%;
 }
- 
+
+.dest img{
+    width: 20rem;
+    height: 20rem;
+    margin-top: 4rem;
+    margin-left: -7rem;
+}
+
 } 
 
 
