@@ -6,8 +6,7 @@
     list-style: none;
 }
 
-@media (max-width:620px){
-
+  
 
 header{
     position: absolute;
@@ -32,13 +31,13 @@ header .navbar{
     display: none;
     width: 50%; 
     position: absolute;
-    left: 9.5rem;
+    left: 9.6rem;
     top: 2.7rem;
     background-color: rgba(75, 118, 196, 0.801);
     border-radius: 5px;
     margin-top: -3rem; 
     z-index: -1;
-    color: #fff;
+    color: #fff;  
 }
 
 header .active{
@@ -114,6 +113,7 @@ main .explore {
     align-items: center;
     margin: 2rem 0;
     cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.6);
     
 }
 
@@ -128,19 +128,19 @@ main .explore  h3{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
-    height: 85vh;
-    overflow: scroll; 
+    height: 100vh; 
     display: none;
     flex-direction: column;
 }
 
 .destination{
+    height: 100vh;
     display: none;
     flex-direction: column;
     background-image: url(./assets/destination/background-destination-mobile.jpg); 
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 .destination .nav-dest{
@@ -175,6 +175,7 @@ main .explore  h3{
 
 
 .crew{  
+    height: 100vh;
     background-image: url(./assets/crew/background-crew-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -182,7 +183,8 @@ main .explore  h3{
     overflow: scroll; 
     position: relative;  
     display: none;
-    flex-direction: column;   
+    flex-direction: column;  
+    
 }
 
 .display{ 
@@ -277,12 +279,15 @@ main .explore  h3{
 }
 
 .techno {
+    height: 100vh;
     background-image: url(./assets/technology/background-technology-mobile.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: none;
     flex-direction: column;
+    overflow: scroll; 
+    
 }
 
  
@@ -351,9 +356,164 @@ main .explore  h3{
 .main-active{ 
     display: flex;
 }
-}
-/* @media (min-width:640px){
+
+ 
+ 
+
+
+
+@media (min-width:920px){
     body{
-        display: none;
+        background-color: #333;
     }
-}      */
+
+header{
+    display: flex; 
+} 
+
+header .navbar{ 
+    display: flex;
+    position: relative;
+    left: 23%; 
+    margin-right: 10rem;
+    height: 4rem;
+    justify-content: space-between;
+     align-items: center;
+     width: 62%;
+     background-color: rgba(255,255,255,0.1);
+     z-index: 10;
+}
+
+#nav-icons{
+    display: none;
+}
+
+header .navbar ul{
+    margin: 0;
+    display: flex;
+    font-size: 16px;
+    padding: 0 1rem;
+}
+
+header .navbar ul::after{
+    content: '';
+    height: 1px;
+    width: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: 98%;
+    top: 50%;
+    z-index: 0;
+    
+}
+
+header .navbar ul a{ 
+    font-size: 1rem;
+    
+}
+
+.home{ 
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-desc{
+    width: 30%;
+    text-align: justify;
+    margin-left: 10rem;
+}
+.circle{
+    margin-right: 10rem;
+}
+
+.crew-desc{
+    text-align: justify;
+    margin-left: 5rem;
+    width: 70%;
+}
+
+.crew-desc h3{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+
+.crew-desc h4:first-child{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #777;
+}
+
+.crew-desc h4:nth-child(2){
+    margin-left: 1rem;
+    font-size: 1.7rem;
+    color: #fff;
+}
+.engineer{
+    width: 30%;
+}
+
+.crew-image {
+    position: absolute;
+    left: 60%;
+    bottom: 0%;
+}
+
+.crew-image img{ 
+    width: 25rem; 
+    height: 25rem;   
+     border-bottom: 2px solid #333;
+     margin-top: 5rem;
+}
+
+.level {
+    position: absolute;
+    bottom: 17%;
+    left: 12%;
+}
+.destination{  
+}
+
+.destination .dest-img{
+    position: absolute;
+    left: 60%;
+}
+.destination .nav-dest{
+    position: absolute;
+    left: 70%;
+}
+
+.destination h2{
+    position: absolute;
+    left: 5%;
+}
+
+
+.destination p{
+    position: absolute;
+    left: 3.8%;
+    top: 40%;
+    width: 40%;
+    text-align: justify;
+}
+
+
+.destination .show-detail{
+    position: absolute;
+    left: 3.8%;
+    top: 65%;
+    width: 40%; 
+   
+}
+ 
+
+.destination h1{
+    position: absolute;
+    left: 5%;
+}
+ 
+} 
+
+
+ 
