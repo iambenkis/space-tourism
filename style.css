@@ -179,8 +179,7 @@ main .explore  h3{
     background-image: url(./assets/crew/background-crew-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-    overflow: scroll; 
+    background-size: cover;  
     position: relative;  
     display: none;
     flex-direction: column;  
@@ -414,9 +413,16 @@ header .navbar ul a{
 
 .home{ 
     flex-direction: row; 
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    padding-top: 10rem;
 }
+
+.home p {
+    position: absolute;
+    left: 10%;
+}
+ 
 
 .home-desc{
     width: 30%;
@@ -454,10 +460,15 @@ header .navbar ul a{
     width: 30%;
 }
 
+.description p{
+    position: absolute;
+    left: 6%;
+}
+
 .crew-image {
     position: absolute;
     left: 60%;
-    bottom: 15%;
+    bottom: -1%;
 }
 
 .crew-image img{ 
@@ -469,11 +480,10 @@ header .navbar ul a{
 
 .level {
     position: absolute;
-    bottom: 17%;
+    bottom: 10%;
     left: 12%;
-}
-.destination{  
-}
+} 
+
 
 .destination .dest-img{
     position: absolute;
@@ -526,6 +536,78 @@ header .navbar ul a{
     margin-top: 4rem;
     margin-left: -7rem;
 }
+
+.tech-img img{
+    width: 25rem;
+    height: 15rem;
+    position: absolute;
+    right: 7%;
+}
+
+.techno .nav-tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.techno .nav-tech .nbr{
+    position: absolute; 
+}
+
+.techno .nav-tech .nbr:first-child{
+    top: 1rem;
+}
+
+.techno .nav-tech .nbr:nth-child(2){
+   top: 4rem;
+}
+
+.techno .nav-tech .nbr:last-child{
+    top: 7rem; 
+}
+.techno h3,h6,p{
+    text-align: justify;
+    position: absolute;
+    left: 15%;
+    width: 40%;
+}
+
+.techno h2{
+   position: absolute;
+   left: 10%;
+   font-size: 2rem;
+}
+
+.techno h3{
+    top: 40%;
+    left: 16%;
+    font-size: 4rem;
+}
+
+.techno .tech-desc  p {
+    top: 60%;
+}
+
+.techno .tech-desc  h6 {
+    top: 40%;
+    left: 16%;
+}
+
+.home,
+.crew,
+.destination,
+.techno{
+    height: 78vh;
+    overflow: hidden;
+}
+
+.home {
+    height: 70vh;
+}
+
 
 } 
 
