@@ -29,15 +29,15 @@ header .nav-icons .fa-bars{
 
 header .navbar{
     display: none;
-    width: 50%; 
+    width: 100%; 
     position: absolute;
-    left: 9.6rem;
+    left: 1%;
     top: 2.7rem;
-    background-color: rgba(75, 118, 196, 0.801);
+    background-color: rgba(255,255, 255, 0.801);
     border-radius: 5px;
     margin-top: -3rem; 
     z-index: -1;
-    color: #fff;  
+    color: blue;   
 }
 
 header .active{
@@ -67,14 +67,15 @@ header .navbar li{
     padding:1rem;
     text-align: justify;
     text-transform: uppercase;
-    margin-right: .2rem;
+    margin-left: 50%;
 }
 
 header .navbar li a{
     text-decoration: none;
-    color: #fff;
+    color: rgba(8, 8, 32, 0.671);
     font-weight: 600;
-    
+    text-align: center;
+     
 }
 
 main{
@@ -406,11 +407,19 @@ header .navbar ul::after{
     
 }
 
-header .navbar ul a{ 
-    font-size: 1rem;
-    
+header .navbar li{
+    padding:1rem;
+    text-align: justify;
+    text-transform: uppercase;
+    margin-left: 1%;
 }
 
+header .navbar ul li a{ 
+    font-size: 1rem;
+    color: #fff;
+    margin-right: 2rem;
+} 
+ 
 .home{ 
     flex-direction: row; 
     align-items: start;
@@ -480,7 +489,7 @@ header .navbar ul a{
 
 .level {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 12%;
 } 
 
@@ -584,7 +593,7 @@ header .navbar ul a{
 .techno h3{
     top: 40%;
     left: 16%;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .techno .tech-desc  p {
