@@ -1,7 +1,7 @@
 # space-tourism
 # Frontend Mentor - Space tourism website
 
-##Here is the solved challenge in picture and below you will see the demo version.
+## Here is the solved challenge in picture and below you will see the demo version.
 ![Design preview for the Space tourism website coding challenge](img/spaceTourismMobileVersion.png)
 ![Design preview for the Space tourism website coding challenge](img/spaceTourismdesktopVersion.png)
 
