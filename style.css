@@ -132,6 +132,7 @@ main .explore  h3{
     height: 100vh; 
     display: none;
     flex-direction: column;
+    overflow: scroll;
 }
 
 .destination{
@@ -142,6 +143,7 @@ main .explore  h3{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
+    overflow: scroll;
 }
 
 .destination .nav-dest{
@@ -184,7 +186,7 @@ main .explore  h3{
     position: relative;  
     display: none;
     flex-direction: column;  
-    
+    overflow: scroll;
 }
 
 .display{ 
